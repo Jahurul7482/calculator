@@ -33,11 +33,12 @@ function zeroValue(){
 function doubleZeroValue(){
     display.value += "00";
 };
-function clearDeg(){
-    display.value = " ";
+function rootOver(){
+    display.value = Math.sqrt(display.value);
 };
 function powerOn(){
-    display.value = "0";
+    display.placeholder = "0";
+    display.value = "";
 }
 function devidedValue(){
     display.value += '/';
