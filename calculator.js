@@ -1,4 +1,5 @@
 let display = document.querySelector('#display');
+let powerbtn = document.querySelector('#onbtn');
 
 function oneValue(){
     display.value += 1;
@@ -37,8 +38,15 @@ function rootOver(){
     display.value = Math.sqrt(display.value);
 };
 function powerOn(){
-    display.placeholder = "0";
-    display.value = "";
+    
+    if(display.value || display.placeholder == ""){
+        display.placeholder = "0";
+        display.value = "";
+        powerbtn.value = "off";
+    }else{
+        display.placeholder = "";
+        powerbtn.value = "on";
+    }
 }
 function devidedValue(){
     display.value += '/';
