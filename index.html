@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- page title -->
+    <title>Calculator</title>
+    
+    <!-- page icon -->
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="header">
+                <div class="upper-part">
+                    <h3>JK Calculator</h3>
+                </div>
+                <div class="display">
+                    <input type="text" class="display" name="display" id="display" readonly>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="keyline">
+                    <input type="button" class="btn c-btn" onclick="delOneDeg()" value="C">
+                    <input type="button" class="btn math-btn" onclick="percentValue()" value="%">
+                    <input type="button" class="btn" id="onbtn" onclick="powerOn()" value="On">
+                    <input type="button" class="btn math-btn" onclick="devidedValue()" value="/">
+                </div>
+                <div class="keyline">
+                    <input type="button" class="btn num-btn" onclick="sevenValue()" value="7">
+                    <input type="button" class="btn num-btn" onclick="eightValue()" value="8">
+                    <input type="button" onclick="nineValue()" class="btn num-btn" value="9">
+                    <input type="button" class="btn math-btn"
+                    onclick="maltiplerValue()" value="*">
+                </div>
+                <div class="keyline">
+                    <input type="button" class="btn num-btn" onclick="fourValue()" value="4">
+                    <input type="button" class="btn num-btn" onclick="fiveValue()" value="5">
+                    <input type="button" class="btn num-btn" value="6" onclick="sixValue()">
+                    <input type="button" class="btn math-btn" onclick="minusValue()" value="-">
+                </div>
+                <div class="keyline">
+                    <input type="button" class="btn num-btn" onclick="oneValue()" value="1">
+                    <input type="button" class="btn num-btn" onclick="twoValue()" value="2">
+                    <input type="button" class="btn num-btn" onclick="threeValue()" value="3">
+                    <input type="button" class="btn math-btn plus-btn" onclick="plusValue()" value="+">
+                </div>
+                <div class="keyline">
+                    <input type="button" class="btn num-btn" onclick="doubleZeroValue()" value="00">
+                    <input type="button" class="btn num-btn" onclick="zeroValue()" value="0">
+                    <input type="button" class="btn num-btn" onclick="dotValue()" value=".">
+                </div>
+                <div class="keyline">
+                    <input type="button" class="btn math-btn" id="equal-btn" onclick="evalValue()" value="=">
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright &copy 2022 team listen coder's and jahurul islam</p>
+    </footer>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

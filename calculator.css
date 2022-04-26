@@ -1,0 +1,100 @@
+/* =======================
+font faciing
+======================== */
+@font-face
+{
+    font-family: 'segment';
+    src: url(./fonts/Seven\ Segment.ttf);
+}
+/* ======================
+basic setup
+======================== */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'segment';
+    transition: .3s all ease;
+}
+.btn
+{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    color: #fff;
+    background-image: linear-gradient(30deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
+}
+.btn:active
+{
+    padding: 5px 10px;
+    border: none;
+    box-shadow:inset 1px 1px 3px black;
+    color: #fff;
+    transform: translate(-1px);
+    background-image: linear-gradient(30deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
+}
+
+/* =======================
+main css
+========================= */
+.container
+{
+    margin: auto;
+    width: fit-content;
+}
+.header
+{
+    transform: skewX(-15deg) translate(12px);
+    padding: 3px;
+    border-radius: 6px 6px 0px 0px;
+    background-image: linear-gradient(#ccc,#fff,#ccc);
+}
+.buttons
+{
+    background: gray;
+    height: 70vh;
+    border-radius: 0px 0px 6px 6px;
+}
+.header .display input
+{
+    max-width: 700px;
+    min-width: 400px;
+    height: 10vh;
+    font-size: 2.5rem;
+    background-color: darkslategrey;
+    text-align: end;
+    padding: 5px 15px;
+    margin: 5px;
+    outline: none;
+    border: none;
+}
+.keyline
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    height: 9vh;
+}
+.keyline input
+{
+    width: 20%;
+    font-size: 1.5rem;
+}
+#onbtn
+{
+    background-image: linear-gradient(rgba(255, 0, 0, 0.603),#900,rgba(255, 0, 0, 0.514));
+}
+#equal-btn
+{
+    width: 100%;
+}
+footer
+{
+    height: 4rem;
+}
+footer p
+{
+    line-height: 4rem;
+    text-align: center;
+}
