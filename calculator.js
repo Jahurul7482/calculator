@@ -43,7 +43,7 @@ function devidedValue(){
     display.value += '/';
 };
 function percentValue(){
-    display.value += "%";
+    display.value = display.value/100;
 };
 function maltiplerValue(){
     display.value += "*";
