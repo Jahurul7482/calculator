@@ -25,16 +25,20 @@ basic setup
     color: #fff;
     background-image: linear-gradient(30deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
 }
+.btn:hover
+{
+    background-image: linear-gradient(270deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
+}
 .btn:active
 {
-    padding: 5px 10px;
-    border: none;
     box-shadow:inset 1px 1px 3px black;
-    color: #fff;
     transform: translate(-1px);
-    background-image: linear-gradient(30deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
+    background-image: linear-gradient(160deg, rgb(228, 204, 204), rgb(112, 103, 103), rgb(228, 204, 204));
 }
-
+body
+{
+    background-image: url(./image/bg.jpg);
+}
 /* =======================
 main css
 ========================= */
@@ -76,6 +80,11 @@ main css
     padding: 7px;
     height: 9vh;
 }
+.upper-part h3
+{
+    margin-left: 20px;
+    color: cadetblue;
+}
 .keyline input
 {
     width: 20%;
@@ -84,6 +93,10 @@ main css
 #onbtn
 {
     background-image: linear-gradient(rgba(255, 0, 0, 0.603),#900,rgba(255, 0, 0, 0.514));
+}
+.delbtn
+{
+    color: #900;
 }
 #equal-btn
 {

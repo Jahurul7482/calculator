@@ -33,8 +33,8 @@ function zeroValue(){
 function doubleZeroValue(){
     display.value += "00";
 };
-function delOneDeg(){
-    display.value = "";
+function clearDeg(){
+    display.value = " ";
 };
 function powerOn(){
     display.value = "0";
@@ -57,7 +57,9 @@ function plusValue(){
 function dotValue(){
     display.value += ".";
 };
-
 function evalValue(){
     display.value = eval(display.value);
+};
+function delOneDig(){
+    display.value = display.value.slice(0, -1)
 };
