@@ -44,12 +44,12 @@ main css
 ========================= */
 .container
 {
-    margin: auto;
+    margin:30px auto;
     width: fit-content;
 }
 .header
 {
-    transform: skewX(-15deg) translate(12px);
+    transform: skewX(-15deg) translate(15px);
     padding: 3px;
     border-radius: 6px 6px 0px 0px;
     background-image: linear-gradient(#ccc,#fff,#ccc);
